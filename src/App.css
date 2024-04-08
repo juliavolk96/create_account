@@ -1,0 +1,823 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body {
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+body {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  word-wrap: break-word;
+  color: white;
+}
+
+h1, h2 {
+  font-size: 14px;
+}
+
+a {
+  cursor: pointer;
+  color: #007AFF;
+  text-decoration: none;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.left-section {
+  background: linear-gradient(204.07deg, #0F70DA 0.74%, #007AFF 100%);
+}
+
+.left-section, .right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-section-container, .right-section-container {
+  width: 90%;
+  padding: 20px 0;
+}
+
+.ellipse-container {
+  position: relative;
+}
+
+.ellipse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.phone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 0;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  width: 28%;
+  gap: 10px;
+}
+
+.logo p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: left;
+  color: black;
+}
+
+form {
+  width: 100%;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+form label {
+  word-wrap: break-word;
+  font-size: 12px;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  margin-bottom: 4px;
+  border: 1px solid #D1D1D1;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.first-column, .second-column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.input-icon-container {
+  position: relative;
+}
+
+.input-icon-container input {
+  cursor: default;
+}
+
+.input-with-icon {
+  padding-right: 30px;
+}
+
+.input-icon {
+  position: absolute;
+  right: 5px;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.remember-me, .terms-privacy {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+form .checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+
+.agreement-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  gap: 10px;
+}
+
+.agreement {
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.forgot-password {
+  text-align: right;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.login-btn-container, .sign-btn-container {
+  width: 50%;
+}
+
+.google-svg {
+  width: 17px;
+  height: 17px;
+}
+
+.buttons .btn {
+  width: 100%;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.sign-btn {
+  height: 40px;
+  background: #2D3748;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.login-btn {
+  height: 40px;
+  background: #007AFF;
+}
+
+.log-in {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.log-in p {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.log-in p a {
+  margin-left: 5px;
+}
+
+.social-buttons {
+  display: inline-flex;
+  gap: 12px;
+}
+
+.social {
+  width: 115px;
+  height: 38px;
+  background: #000000;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: none;
+  outline: none;
+}
+
+
+/*Images*/
+.logo img {
+  width: 30px;
+  height: 36px;
+}
+
+.ellipse svg {
+  width: 300px;
+  height: 300px;
+}
+
+.phone svg {
+  width: 310px;
+  height: 310px;
+}
+
+.google-svg {
+  width: 17px;
+  height: 17px;
+}
+
+/*Calendar*/
+.react-datepicker-popper {
+  left: -15px !important;
+  
+}
+
+
+
+@media only screen and (min-width: 1920px) {
+  h1, h2 {
+    font-size: 28px;
+  }
+
+  .logo img {
+    width: 41px;
+    height: 48px;
+  }
+
+  .logo p {
+    font-size: 18px;
+  }
+
+  .text p {
+    font-size: 20px;
+  }
+
+  form label, .forgot-password p, .buttons .btn, .log-in p {
+    font-size: 14px;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-section {
+    width: 45%;
+  }
+
+  .right-section {
+    width: 55%;
+  }
+
+  .left-section, .right-section {
+    min-height: 100vh;
+  }
+
+  .right-section-container, .left-section-container {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+  }
+
+  .agreement-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .agreement {
+    width: 60%;
+  }
+
+  .log-in {
+    text-align: center;
+  }
+
+  .agreement-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .agreement {
+    width: 70%;
+  }
+
+  /*Images*/
+  .ellipse svg {
+    width: 500px;
+    height: 500px;
+  }
+  
+  .phone svg {
+    width: 510px;
+    height: 510px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 1024px) and (max-width: 1919px) {
+  h1, h2 {
+    font-size: 20px;
+  }
+
+  .logo p {
+    font-size: 16px;
+  }
+
+  .text p {
+    font-size: 14px;
+  }
+
+  form label, .forgot-password p, .buttons .btn, .log-in p {
+    font-size: 12px;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-section {
+    width: 40%;
+  }
+
+  .right-section {
+    width: 60%;
+  }
+
+  .left-section, .right-section {
+    min-height: 100vh;
+  }
+
+  .right-section-container, .left-section-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+  }
+
+  .right-section-container {
+    gap: 30px;
+  }
+
+  .left-section-container {
+    gap: 50px;
+  }
+
+  form {
+    gap: 30px;
+  }
+
+  .agreement-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .agreement {
+    width: 60%;
+  }
+
+  .log-in {
+    text-align: center;
+  }
+
+  .agreement-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .agreement {
+    width: 70%;
+  }
+
+  /*Images*/
+  .ellipse svg {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .phone svg {
+    width: 410px;
+    height: 410px;
+  }
+  
+}
+
+@media only screen and (orientation: portrait) and (min-width: 1024px) and (max-width: 1919px) {
+  h1, h2 {
+    font-size: 20px;
+  }
+
+  .logo p {
+    font-size: 16px;
+  }
+
+  .text p {
+    font-size: 14px;
+  }
+
+  form label, .forgot-password p, .buttons .btn, .log-in p {
+    font-size: 12px;
+  }
+
+  .right-section-container, .left-section-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+  }
+
+  .right-section-container {
+    gap: 30px;
+  }
+
+  .left-section-container {
+    gap: 40px;
+  }
+
+  .agreement-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .agreement {
+    width: 70%;
+  }
+
+  /*Images*/
+  .ellipse svg {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .phone svg {
+    width: 410px;
+    height: 410px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1023px) {
+  h1, h2 {
+    font-size: 14px;
+  }
+
+  .logo p {
+    font-size: 14px;
+  }
+
+  .text p {
+    font-size: 12px;
+  }
+
+  form label, .forgot-password p, .buttons .btn, .log-in p {
+    font-size: 12px;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-section {
+    width: 45%;
+  }
+
+  .right-section {
+    width: 55%;
+  }
+
+  .left-section, .right-section {
+    min-height: 100vh;
+  }
+
+  .right-section-container, .left-section-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+  }
+
+  .right-section-container {
+    gap: 20px;
+  }
+
+  .left-section-container {
+    gap: 30px;
+  }
+
+  form {
+    gap: 20px;
+  }
+
+  .agreement-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .agreement {
+    width: 70%;
+  }
+
+  /*Images*/
+  .ellipse svg {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .phone svg {
+    width: 310px;
+    height: 310px;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1023px) {
+  h1, h2 {
+    font-size: 18px;
+  }
+
+  .logo p {
+    font-size: 16px;
+  }
+
+  .text p {
+    font-size: 14px;
+  }
+
+  form label, .forgot-password p, .buttons .btn, .log-in p {
+    font-size: 14px;
+  }
+
+  .left-section-container, .right-section-container {
+    margin: 25px auto;
+  }
+
+  .left-section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .right-section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  form {
+    gap: 20px;
+  }
+
+  .agreement-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .agreement {
+    width: 70%;
+  }
+
+  /*Images*/
+  .ellipse svg {
+    width: 330px;
+    height: 330px;
+  }
+  
+  .phone svg {
+    width: 320px;
+    height: 320px;
+  }
+
+}
+
+@media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 767px) {
+  h1, h2 {
+    font-size: 14px;
+  }
+
+  .logo p {
+    font-size: 12px;
+  }
+
+  .text p {
+    font-size: 12px;
+  }
+
+  form label, .forgot-password p, .buttons .btn, .log-in p {
+    font-size: 12px;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-section {
+    width: 45%;
+  }
+
+  .right-section {
+    width: 55%;
+  }
+
+  .left-section, .right-section {
+    min-height: 100vh;
+  }
+  
+  .right-section-container, .left-section-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+  }
+
+  .right-section-container {
+    gap: 20px;
+  }
+
+  .left-section-container {
+    gap: 55px;
+  }
+
+  form {
+    gap: 20px;
+  }
+
+  /*Images*/
+  .ellipse svg {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .phone svg {
+    width: 255px;
+    height: 255px;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 320px) and (max-width: 767px) {
+  h1, h2 {
+    font-size: 14px;
+  }
+
+  .logo p {
+    font-size: 12px;
+  }
+
+  .text p {
+    font-size: 12px;
+  }
+
+  form label, .forgot-password p, .buttons .btn, .log-in p {
+    font-size: 12px;
+  }
+
+  .right-section-container, .left-section-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-section-container {
+    gap: 30px;
+  }
+
+  .right-section-container {
+    gap: 20px;
+  }
+
+  form {
+    gap: 20px;
+  }
+
+  /*Images*/
+  .ellipse svg {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .phone svg {
+    width: 310px;
+    height: 310px;
+  }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 279px) and (max-width: 319px) {
+  h1, h2 {
+    font-size: 14px;
+  }
+
+  .logo p {
+    font-size: 12px;
+  }
+
+  .text p {
+    font-size: 12px;
+  }
+
+  form label, .forgot-password p, .buttons .btn, .log-in p {
+    font-size: 10px;
+  }
+
+  .right-section-container, .left-section-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-section-container {
+    gap: 30px;
+  }
+
+  .right-section-container {
+    gap: 20px;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .first-column, .second-column {
+    width: 100%;
+  }
+
+  form {
+    gap: 20px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-btn-container, .sign-btn-container {
+    width: 100%;
+  }
+
+  /*Images*/
+  .ellipse svg {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .phone svg {
+    width: 210px;
+    height: 210px;
+  }
+}
+
+@media only screen and (orientation: landscape) and (min-width: 279px) and (max-width: 319px) {
+  h1, h2 {
+    font-size: 12px;
+  }
+
+  .logo p {
+    font-size: 12px;
+  }
+
+  .text p {
+    font-size: 12px;
+  }
+
+  form label, .forgot-password p, .buttons .btn, .log-in p {
+    font-size: 10px;
+  }
+
+  .right-section-container, .left-section-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-section-container {
+    gap: 30px;
+  }
+
+  .right-section-container {
+    gap: 20px;
+  }
+}
