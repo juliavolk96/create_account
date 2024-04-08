@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/create_account/static/css/main.289c63f0.css",
+    "main.js": "/create_account/static/js/main.529e7e09.js",
+    "static/media/phones.svg": "/create_account/static/media/phones.14617db1f67d0cc490a795097726c3a5.svg",
+    "static/media/logo.png": "/create_account/static/media/logo.42401bdcb626ae26bdbd.png",
+    "static/media/googlePlay.svg": "/create_account/static/media/googlePlay.90e75a72b803ed8af68723045acb0d63.svg",
+    "static/media/appStore.svg": "/create_account/static/media/appStore.88181c1e012c8dd2762d7b4d17ade918.svg",
+    "static/media/GoogleImg.svg": "/create_account/static/media/GoogleImg.77a2f5b088d9e37604a2581cd3c9345f.svg",
+    "static/media/calendar.svg": "/create_account/static/media/calendar.31b01c4ac8beac264a2672b54d692aa6.svg",
+    "index.html": "/create_account/index.html",
+    "static/media/circle.svg": "/create_account/static/media/circle.a0fbbec2e5d64abf5dd215632b5290ef.svg",
+    "main.289c63f0.css.map": "/create_account/static/css/main.289c63f0.css.map",
+    "main.529e7e09.js.map": "/create_account/static/js/main.529e7e09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.289c63f0.css",
+    "static/js/main.529e7e09.js"
+  ]
+}
